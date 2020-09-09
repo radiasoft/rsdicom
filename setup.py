@@ -12,6 +12,8 @@ pksetup.setup(
     author_email='pip@radiasoft.net',
     description='DICOM toolbox',
     install_requires=[
+        'pdfquery',
+        'pydicom',
         'pykern',
     ],
     license='http://www.apache.org/licenses/LICENSE-2.0.html',
