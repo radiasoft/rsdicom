@@ -23,4 +23,4 @@ def default_command():
     r = pydicom.dcmread(ucla_140)[roi_structure_set_loc]
     roi_name_loc = (0x3006,0x0026)
     for e in r:
-        pkdp('{}', e[roi_name_loc])
+        pkdp('{}', e[roi_name_loc].value)
